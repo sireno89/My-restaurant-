@@ -16,9 +16,9 @@ document.addEventListener('click', function (e) {
 
 /*--------------sticky header--------------*/
 window.addEventListener('scroll', function () {
-  if (this.pageXOffset > 60) {
-    document.querySelector('.header').className.add('sticky');
-  }else{
+  if(this.scrollY > 60) {
+    document.querySelector('.header').classList.add('sticky');
+  } else {
     document.querySelector('.header').classList.remove('sticky');
   }
 });
